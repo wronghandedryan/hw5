@@ -1,0 +1,131 @@
+
+body {
+
+    background-color: black;
+    
+ }
+.time {
+    font-size: medium;
+    font-family: monospace;
+    font-weight: 400;
+}
+.navbar{
+    font-family: monospace;
+    font-weight: 500;
+    color: black;
+    font-size-adjust: initial;
+}
+
+.jumbotron {
+    font-size-adjust: 30px;
+    background-size: cover;
+    background:black;
+
+}
+h1 {
+    font-family: monospace;
+    text-shadow: 1px 1px white;
+    align-self: center;
+}
+h3 {
+    padding-left: 0.5in;
+    font-family: monospace;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+
+svg {
+    float: left;
+    padding-bottom: 12px;
+}
+#scale {
+    float: left;
+
+}
+
+.lead {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+p{
+    font-family: monospace;   
+}
+
+#todaysDate {
+    font-size: larger;
+    text-decoration-color: white;
+    font-weight: 300;
+    font-family: monospace;
+    float: center;
+}
+.lead {
+
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.98);
+    
+
+}
+
+.plannerDiv{  
+    
+    border-radius: 25px;
+}
+
+
+
+#text9AM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+
+#text10AM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+#text11AM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+#text12AM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+#text1PM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+#text2PM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+#text3PM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+#text4PM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+#text5PM {
+    font-size: 14px;
+    border-radius: 5px;
+} 
+
+
+
+
+ .footer {
+ color: white;
+ font-family: monospace; 
+
+}
+
+textarea p {
+-webkit-box-shadow: inset 2px 2px 2px 0px #646464;
+-moz-box-shadow: inset 2px 2px 2px 0px #000000;
+box-shadow: inset 2px 2px 2px 0px #ffffff;
+
+
+}

@@ -1,11 +1,12 @@
+console.log("dogs"); //sanity check
 $(document).ready(function () {
 
-  //Setting up the date and appending to the HTML page
-  var today = moment().format('MMMM Do YYYY');
+ 
+  var today = moment().format('MMMM DD YYYY');
   console.log(today);
   $(".todaysDate").append(today);
 
-  var now = parseInt(moment().format('HH'));
+  var now = parseInt(moment().format('lll'));
   console.log(now);
 
   var $text9AM = $("#text9AM");
@@ -21,24 +22,10 @@ $(document).ready(function () {
 
   $("textarea").each(function () {
     var name = parseInt($(this).attr("name"));
-    if (name < now) {
-      $(this).addClass("bg-gray");
-    }
-
-
-    if (name > now) {
-      $(this).addClass("bg-green");
-    }
-
-    if (name === now) {
-      $(this).addClass("bg-red");
-    }
-
-
-
   });
 
-  $("<button>").on("click", function () {
+
+  $("button").on("click", function () {
 
     //setting items in the local storage
     localStorage.setItem("9AM", ($text9AM.val()));
@@ -64,4 +51,4 @@ $(document).ready(function () {
   $("#text4PM").append(localStorage.getItem("16PM"));
   $("#text5PM").append(localStorage.getItem("17PM"));
 
-});
+  });

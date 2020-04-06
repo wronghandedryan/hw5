@@ -9,8 +9,7 @@
     <link href="./calendar.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="moment-with-locals.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
-    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" src="calendar.css">
     <title>Day Planner</title>
 </head>
 
@@ -21,12 +20,11 @@
            <center><h1 class="text"> <b>Daily Planner</b></h1></center>
         </nav>
     </header>
-
     <div class="jumbotron jumbotron-fluid headerDiv">
         <div class="container text-center text-white">
             <span style="font-size: 6em"><i id="scale" class="far fa-balance-scale"></i></span>
 
-            <p class="lead p-10px">Try to Find a Balance!</p>
+            <p class="lead">Try to Find a Balance!</p>
             <p class="todaysDate" id="todaysDate"></p>
         </div>
     </div>
@@ -35,37 +33,35 @@
         <div class="row row-9">
 
             <div class="  input-container input-group col-1 ">
-                <p id="9am">9am</p>
+                <p id="9AM">9am</p>
 
             </div>
             <div class="input-group  col-10 form-group">
-                <textarea id="text9AM" class="form-control custom-control" rows="2"></textarea>
-                <button class="btn col-1"> <span style="font-size: 2.5em; color:white"><i class="far fa-save size"></i></span></button>
+                <textarea id="text9AM" class="form-control custom-control" rows="2" name="9"></textarea>
+                <button class="button btn col-1"> <span style="font-size: 2.5em; color:white"><i class="far fa-save size"></i></span></button>
             </div>
         </div>
 
 
         <div class="row row10 text-white">
             <div class="input-group input-container  col-1">
-                <p id="10am">10am</p>
+                <p id="10AM">10am</p>
             </div>
             <div class="input-group col-10 form-group">
                 <textarea id="text10AM" class="form-control custom-control" rows="2" name="10"></textarea>
-                <button class="btn col-1"> <span style="font-size: 2.5em; color: white"><i
-                            class="far fa-save"></i></span></button>
+                <button class="button btn col-1"> <span style="font-size: 2.5em; color: white"><i class="far fa-save"></i></span></button>
             </div>
         </div>
 
 
         <div class="row row-11">
             <div class="input-group  col-1">
-                <p id="11am">11am</p>
+                <p id="11AM">11am</p>
 
             </div>
             <div class="input-group col-10 form-group text-white">
                 <textarea id="text11AM" class="form-control custom-control" rows="2" name="11"></textarea>
-                <button class="btn  col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i>
-                    </span></button>
+                <button class="button btn  col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i></span></button>
             </div>
         </div>
 
@@ -73,13 +69,12 @@
         <div class="row row-12">
 
             <div class="input-group col-1">
-                <p id="12pm">12pm</p>
+                <p id="12PM">12pm</p>
 
             </div>
             <div class="input-group col-10 form-group">
                 <textarea id="text12AM" class="form-control custom-control" rows="2" name="12"></textarea>
-                <button class="btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i>
-                    </span></button>
+                <button class="button btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i></span></button>
             </div>
         </div>
 
@@ -87,27 +82,22 @@
         <div class="row row-13">
 
             <div class="input-group col-1">
-                <p id="1pm">1pm</p>
+                <p id="1PM">1pm</p>
 
             </div>
             <div class="input-group col-10 form-group">
                 <textarea id="text1PM" class="form-control custom-control" rows="2" name="13"></textarea>
-                <button class="btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i>
-                    </span></button>
+                <button class="button btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i></span></button>
             </div>
         </div>
-
-
         <div class="row row-14">
-
             <div class="input-group col-1">
-                <p id="2pm">2pm</p>
+                <p id="2PM">2pm</p>
 
             </div>
             <div class="input-group col-10 form-group">
                 <textarea id="text2PM" class="form-control custom-control" rows="2" name="14"></textarea>
-                <button class="btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i>
-                    </span></button>
+                <button class="button btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i></span></button>
             </div>
         </div>
 
@@ -115,40 +105,37 @@
         <div class="row row-15">
 
             <div class="input-group  col-1">
-                <p id="3pm">3pm</p>
+                <p class="time" id="3PM">3pm</p>
 
             </div>
             <div class="input-group col-10 form-group">
-                <textarea id="text3PM" class="form-control custom-control" rows="2" name="15"> </textarea>
-                <button class="btn col-1"><span style="font-size: 2.5em; color: white "><i class="far fa-save"></i>
-                    </span></button>
+                <textarea id="text3PM" class="form-control custom-control" rows="2" name="15"></textarea>
+                <button class="button btn col-1"><span style="font-size: 2.5em; color: white "><i class="far fa-save"></i></span></button>
             </div>
         </div>
 
 
         <div class="row row16 ">
 
-            <div class="  input-group  col-1">
-                <p class="4pm">4pm</p>
+            <div class="input-group  col-1">
+                <p class="4PM">4pm</p>
 
             </div>
             <div class="input-group col-10 form-group">
                 <textarea id="text4PM" class="form-control custom-control" rows="2" name="16"></textarea>
-                <button class="btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i>
-                    </span></button>
+                <button class="button btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i></span></button>
             </div>
         </div>
 
         <div class="row row17">
 
             <div class="input-group  col-1">
-                <p class="time" id="time">5pm</p>
+                <p class="time" id="5PM">5pm</p>
 
             </div>
             <div class="input-group    col-10 form-group">
                 <textarea id="text5PM" class="form-control custom-control" rows="2" name="17"> </textarea>
-                <button class="btn col-1"> <span style="font-size: 2.5em; color: white "><i
-                            class="far fa-save"></i></span></button>
+                <button class="button btn col-1"> <span style="font-size: 2.5em; color: white "><i class="far fa-save"></i></span></button>
             </div>
             <script src="app.js"></script>
         </div>
@@ -156,9 +143,6 @@
     <footer>
         <div class="footer" id="footer">
             <nav class="navbar bg-white text-black">
-                <!--<span style="font-size: 3em; color: black float-left">
-                    <i class="far fa-scythe"></i>
-                </span>-->
                 <nav class="nav-band">
                     <span style="font-size: 4em; color: black float-left"> <i class="fas fa-dizzy"></i></span></nav>
                 <center>
